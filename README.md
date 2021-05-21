@@ -4,13 +4,13 @@ This is a fun project of a code typing test.
 
 ## Table of Contents
 
-* [General Information](#general-info)
-* [Technologies](#technologies)
+* General Information
+* Technologies
 
-[general-info] ## General Information
-This project is a dynamic portfolio.
+## General Information
+Code typing test created with pure javascript, pure css and html5. I decided to go with pure javascript and css instead of jQuery and Bootstrap for better training and understanding of the functions.
 	
-[technologies] ## Technologies
+## Technologies
 Project is created with:
 * HTML5
 * CSS
