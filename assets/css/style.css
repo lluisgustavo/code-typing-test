@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+/* main style */ 
+body {
+  background-color: #f2f2f2;
+  color: #444;;
+  text-align: center;
+  font-family: Mulish, Arial,sans-serif;
+}
+  
+.container {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.heading {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: black;
+}
+  
+.header {
+  display: flex;
+  align-items: center;
+}
+  
+.timer, .errors, .accuracy,
+.cpm, .wpm {
+  background-color: #ddd;
+  border: rgba(0,0,0,0.1) 0.5px solid;
+  padding: 12px;
+  margin: 1px;
+}
+  
+.cpm, .wpm  {
+  display: none;
+}
+  
+.header-text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+  
+.curr-time, .curr-errors,
+.curr-accuracy, .curr-cpm,
+.curr-wpm {
+  font-size: 2rem;
+}
+  
+/* select languages */
+.btn-javascript, .btn-php, .btn-css,
+.btn-html5 {
+  color: black;
+  background-color: #ddd;
+}
+
+/* typing area */
+.code-type{
+	word-wrap: break-word;
+	color: #26243d;
+	font-family: Ubuntu Mono,Lucida Console,monospace;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 1.1rem;
+	text-align: justify;
+	white-space: pre-wrap;
+	word-spacing: normal;
+  width: 80%;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+}
+
+.code-type-inactive{
+  opacity: .5;
+}
+
+.code-input{
+	word-wrap: break-word;
+	color: #26243d;
+	font-family: Ubuntu Mono,Lucida Console,monospace;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 1.1rem;
+	text-align: left;
+	white-space: pre-wrap;
+	word-spacing: normal;
+  border: 0px;
+}
+
+.code-input-ready{
+	color: green;
+}
+
+.code-input-error{
+  color: red;
+}
+
+.code-input-cursor{
+  animation: blink-animation 0.5s infinite;
+  -webkit-animation: blink-animation 0.5s infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    color: #fff;
+    background-color: black;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    color: #fff;
+    background-color: black;
+  }
+}
+
+
+.restart-btn {
+  display: none;
+  background-color: #ddd;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: gray 2px 2px 2px;
+} 
+  
+.correct-char {
+  color: darkgreen;
+}

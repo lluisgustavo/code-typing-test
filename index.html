@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teste de Digitação</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            Teste de Digitação de Código
+        </div>
+        <div class="language-buttons">
+            <input type="radio" id="js-btn" name="language" value="js" checked="checked">
+            <label for="js-btn">JS</label>
+            <input type="radio" id="php-btn" name="language" value="php">
+            <label for="php-btn">PHP</label>
+            <input type="radio" id="css-btn" name="language" value="css">
+            <label for="css-btn">CSS</label> 
+            <input type="radio" id="html-btn" name="language" value="html">
+            <label for="html-btn">HTML</label> 
+            <input type="radio" id="java-btn" name="language" value="java">
+            <label for="java-btn">HTML</label> 
+        </div>
+        <div class="header">
+            <div class="wpm">
+                <div class="header-text">
+                    WPM
+                </div>
+                <div class="curr-wpm">
+                    0
+                </div>
+            </div>
+            <div class="cpm">
+                <div class="header-text">
+                    CPM
+                </div>
+                <div class="curr-cpm">
+                    0
+                </div>
+            </div>
+            <div class="errors">
+                <div class="header-text">
+                    Erros
+                </div>
+                <div class="curr-errors">
+                    0
+                </div>
+            </div>
+            <div class="timer">
+                <div class="header-text">
+                    Tempo
+                </div>
+                <div class="curr-time">
+                    0s
+                </div>
+            </div>
+            <div class="accuracy">
+                <div class="header-text">
+                    % Precisão
+                </div>
+                <div class="curr-accuracy">
+                    0
+                </div>
+            </div>
+        </div>
+
+        <div id="code-type" class="code-type code-type-inactive"></div>
+        <div id="click-to-activate"><small>Clique para começar...</small></div>
+
+        <button class="restart-btn" 
+            onclick="resetValues()">
+            Recomeçar
+        </button>
+    </div>
+
+    <script src="assets/js/game.js"></script>
+</body>
+</html>
